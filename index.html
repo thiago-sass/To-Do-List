@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt" class="dark-theme">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="#" />
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <title>To Do List</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="/styles.css" />
+    <!-- JavaScript -->
+    <script src="script.js" async defer></script>
+  </head>
+  <body>
+    <main>
+      <section class="header">
+        <h1 class="logo">TO DO</h1>
+
+        <input type="checkbox" class="check-switcher" id="check-switcher" />
+
+        <label class="label-switcher" for="check-switcher">
+          <span class="material-symbols-outlined light-mode"> light_mode </span>
+          <span class="material-symbols-outlined dark-mode"> dark_mode </span>
+          <div class="label-circle"></div>
+        </label>
+      </section>
+
+      <section class="create-todo">
+        <input
+          class="todo-input"
+          type="text"
+          placeholder="Create a new todo..."
+          maxlength="50"
+          autofocus
+        />
+        <span class="material-symbols-outlined add-icon"> add </span>
+      </section>
+
+      <section class="todo-editor">
+        <input class="todo-editor__input" type="text" maxlength="50" />
+        <span class="material-symbols-outlined todo-editor__done"> done </span>
+        <span class="material-symbols-outlined todo-editor__close">
+          close
+        </span>
+      </section>
+
+      <section class="todo-list"></section>
+
+      <section class="todo-filters">
+        <div class="todo-status todo-all selected">All</div>
+        <div class="todo-status todo-pending">Pending</div>
+        <div class="todo-status todo-complete">Complete</div>
+      </section>
+
+      <div class="drag-drop">Drag and drop to reorder list</div>
+    </main>
+  </body>
+</html>
