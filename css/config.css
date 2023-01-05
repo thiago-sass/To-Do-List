@@ -1,0 +1,33 @@
+/* RESET CSS */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-size: 18px;
+  font-style: normal;
+  transition: all 0.2s linear;
+}
+
+/* VARIABLES */
+:root {
+  --body-bg-color: #eee;
+  --bg-item-color: #fff;
+  --primary-color: #111;
+  --secondary-color: #999;
+  --active-color: blue;
+  --border-color: #bbb;
+  --green-done: rgb(0, 250, 150);
+}
+.dark-theme:root {
+  --body-bg-color: #212529;
+  --bg-item-color: #343a40;
+  --primary-color: #dee2e6;
+  --secondary-color: #6c757d;
+  --active-color: lightblue;
+  --border-color: #495057;
+  --green-done: rgb(0, 250, 150);
+}
